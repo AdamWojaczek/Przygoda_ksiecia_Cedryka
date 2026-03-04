@@ -1,0 +1,219 @@
+[
+	{
+		"TITLE": "POCZĄTEK",
+		"NUMBER": 1,
+		"TEXT": "--- PRZYGODA KSIĘCIA CEDRYKA ---\n\nGra \"Przygoda księcia Cedryka\", to edukcyjna adaptacja mini przygody (pod tym samym tytułem) pochodzącej z gry fabularnej (RPG) napisanej dla polskiego systemu \"KRYSZTAŁY CZASU\" autorstwa Artura Szyndlera, która została opublikowana w czasopiśmie \"Magia i Miecz\" nr 1 w roku 1993.\nNiniejsza (bardzo prosta, wręcz trywialna) gra paragrafowa/narracyjna, powstała w celach edukacyjnych, jako wprawka (i zabawa) w programowaniu w języku Python. Jest to obiektowa wersja program, który napisałem w czasach licelnych (styczeń 1996 r.) w języku QBASIC (również w ramach edukacji).\n\nAdam Wojaczek\n[marzec 2026 r.]",
+		"ACTIONS":	[],
+		"NEXT": 10
+	},
+	{
+		"TITLE": "WSTĘP",
+		"NUMBER": 10,
+		"TEXT": "Nastał pierwszy dzień Shnyk-rana, przedostatniego miesiąca roku.\nTego własnie dnia Ty, książe Cedryk, świeżo pasowany rycerz i najmłodszy syn Księcia-Namiestnika Get-warr-garu, byłeś przygotowany do wyruszenia w świat.\nPomyślałeś, że dobrze będzie znaleźć drużynę, w towarzystwie której raźniej będzie wędrować po świecie.\nWiesz dobrze, że w stolicy - Ostrogarze, w ostatnim miesiącu roku można spotkać wielu ciekawych ludzi na świątecznym jarmarku. Postanowileś, więc się tam udać.\nKonno podróż będzie trwała około 40 dni. Trakt łączacy Gat-warr-gar i Ostrogar jest dobrze utrzymany i strzeżony przez oddziały orków Katana.\nOdpowiednio zaopatrzony wyruszasz w droge i przyłączasz się do oddziału orków, ochraniających podróżnych.",
+		"ACTIONS": [],
+		"NEXT": 11
+	},
+	{
+		"TITLE": "POCZĄTEK PODRÓŻY",
+		"NUMBER": 11,
+		"TEXT": "Podróż odbywa się szerokim traktem, który głównie wiedzie lasem. Co robisz?",
+		"ACTIONS":	[
+						["Obserwujesz i nasłuchujesz.", 12],
+						["Nic nie robisz i nie interesujesz sie towarzyszami podróży.", 13],
+						["Postanawiasz obrazić orków i wszcząć awanturę.", 14]
+					],
+		"NEXT": 0
+	},
+	{
+		"TITLE": "OBSERWACJA ORKÓW",
+		"NUMBER": 12,
+		"TEXT": "Przypatrujac sie i nasluchujac spostrzegasz, ze orki sa bezposrednio podlegle Katanowi, dobrze wyekwipowane. Jest ich okolo stu. Reszta osob to nieciekawi kupcy.",
+		"ACTIONS": [],
+		"NEXT": 20
+	},
+	{
+		"TITLE": "PODRÓŻ",
+		"NUMBER": 13,
+		"TEXT": "Nie zwazasz na nic i jedziesz nie interesujac sie innymi.",
+		"ACTIONS": [],
+		"NEXT": 20
+	},
+	{
+		"TITLE": "AWANTURA",
+		"NUMBER": 14,
+		"TEXT": "Postanawiesz nakrzyczec na orkow i wszczac awanture. Obrazasz ich, sa jednak bardzo mili dla ciebie i nie zwazaja na twoje zaczepki.\nTwoje zachowanie jest niegodne rycerza, bedzie to ci zapamietane do czasu zmazania przez ciebi tej hanby.",
+		"ACTIONS": [],
+		"NEXT": 20
+	},
+	{
+		"TITLE": "OBÓZ",
+		"NUMBER": 20,
+		"TEXT": "Po pewnym czasie zblizacie sie do malego obozowiska. Sklada sie ono z dwoch namiotow : rycerskie i zwyklego. Sa one rozbite na malym pagorku.\nPrzed namiotem stoi mloda dziewczyna i ork. Obok pasie sie kilka koni.",
+		"ACTIONS":	[
+						["Przygladasz sie dziewczynie i obozowi.", 21],
+						["Jedziesz dalej i nie przygladasz sie obozowi.", 22]
+					],
+		"NEXT": 0
+	},
+	{
+		"TITLE": "NIEZNAJOMA DZIEWCZYNA",
+		"NUMBER": 21,
+		"TEXT": "Dziewczyna ma okolo 17 lat, jest bardzo ladna i ma na sobie bardzo drogąa szatę, choć nieco sfatygowaną.\nDwa z pasacych sie koni to konie bojowe, pozostale dwa - juczne.",
+		"ACTIONS": [],
+		"NEXT": 30
+	},
+	{
+		"TITLE": "",
+		"NUMBER": 22,
+		"TEXT": "Obóz, jak obóz. Nie warto się nim przejmować.",
+		"ACTIONS": [],
+		"NEXT": 30
+	},
+	{
+		"TITLE": "NIEZNAJOMA DZIEWCZYNA PROSI O POMOC",
+		"NUMBER": 30,
+		"TEXT": "Dziewczyna zauwazywszy, że zblizajacy sie oddzial sklada sie nie tylko z orkow, rzuca sie naprzod wolajac:\n- Pomocy! Pomocy! Porwano mnie!\nOrk uderza ją i zaciaga do namiotu, po chwili jednak wraca.\nZaden z kupcow, czy innych orkow nie reaguje na to zdarzenie i maja zamiar odjechac.",
+		"ACTIONS":	[
+						["Postanawiasz uwolnic dziewczyne.", 31],
+						["Podobnie jak kompani podrozy postanawiasz nie zwazac na to.", 99]
+					],
+		"NEXT": 0
+	},
+	{
+		"TITLE": "POJEDYNEK",
+		"NUMBER": 31,
+		"TEXT": "Żądasz od orka uwolnienia dziewczyny, lecz on kpia z ciebie. Swoją postawą znieważa cię.\nWyzwasz go na pojedynek.\nOrk przyjmuje wyzwanie i przygotowywuje sie do walki.",
+		"ACTIONS":	[
+						["Stajesz do walki.", 32],
+						["Po namyśle postanawiasz jednak odjechać.", 99]
+					],
+		"NEXT": 0
+	},
+	{
+		"TITLE": "WALKA",
+		"NUMBER": 32,
+		"TEXT": "Widzisz pieszego, więc schodzisz z konia. Ork zbliąa się do ciebie.\n\nWALCZYCIE!\n\nZWYCIĘŻASZ!\n",
+		"ACTIONS":	[],
+		"NEXT": 40
+	},
+	{
+		"TITLE": "ZWYCIĘSTWO",
+		"NUMBER": 40,
+		"TEXT": "Po pokonaniu przeciwnika dziewczyna przedstawia sie jako Adrana, ksiezniczka z Tagary Bialej. Dziekuje za wyratowanie z opresji i mowi, ze lowcy niewolnikow napadli ja, gdy byla w drodze do Ostrogaru. Zabili sluzbe i ochrone. Prosi cie o pomoc w dotarciu do stolicy i ochrone.",
+		"ACTIONS":	[
+						["Zgadzasz sie.", 41],
+						["Odmawiasz stanowczo.", 42]
+					],
+		"NEXT": 0
+	},
+	{
+		"TITLE": "ZABIERASZ KSIĘŻNICZKĘ",
+		"NUMBER": 41,
+		"TEXT": "Zgadzasz sie. Postępujesz szlachetnie. Pakujesz rzeczy księżniczki i szybko dołączacie do twojego oddział. Kupcy chcą nabyć od ciebie broń orka.",
+		"ACTIONS":	[
+						["Sprzedajesz broń orka.", 43],
+						["Nie sprzedajesz broni orka.", 44]
+					],
+		"NEXT": 0
+	},
+	{
+		"TITLE": "ODMOWA?",
+		"NUMBER": 42,
+		"TEXT": "Odmawiasz księżniczce. Ona prosi Cię jednak nadal.",
+		"ACTIONS":	[
+						["Zgadzasz się w końcu.", 41],
+						["Trwasz przy swoim i dalej stanowczo odmawiasz.", 99]
+					],
+		"NEXT": 0
+	},
+	{
+		"TITLE": "BROŃ SPRZEDANA",
+		"NUMBER": 43,
+		"TEXT": "Kupcy cieszą się z zakupu i dają ci za nią 20 sztuk złota.",
+		"ACTIONS":	[],
+		"NEXT": 50
+	},
+	{
+		"TITLE": "BROŃ NIESPRZEDANA",
+		"NUMBER": 44,
+		"TEXT": "Nie chcesz sprzedać broni orka. Kupcy wzruszają tylko ramionami i odjeżdżają od ciebie.",
+		"ACTIONS":	[],
+		"NEXT": 50
+	},
+	{
+		"TITLE": "DALSZA PODRÓŻ",
+		"NUMBER": 50,
+		"TEXT": "Podróż przebiega w miarę spokojnie. Z powodu braku poważniejszych przeciwników eskortujacy orkowie są w bardzo dobrych nastrojach.\nWieczorami śpiewaja przy ogniskach chóralne piosenki, niezbyt melodyjne i prostych treściach o zabawach, bijatykach i sławiące ich boga Kartana.\nTy dzielnie strzeżesz księżniczki i opiekujesz się niż, jak przystało rycerzowi.",
+		"ACTIONS":	[],
+		"NEXT": 51
+	},
+	{
+		"TITLE": "SPOTKANIE INNEGO ODDZIAŁU",
+		"NUMBER": 51,
+		"TEXT": "Kilka dni po spotkaniu księżniczki Adrany zauważacie inny oddział. Nadjeżdża on z przeciwnej strony, prawdopodobnie z Ostrogaru. Ich także eskortują orki. Wkrótce oba oddziały orków zbliżają się do siebie i wylewnie witają, zatrzymując do wspólnej biesiady.",
+		"ACTIONS":	[
+						["Przygladasz sie temu uwaznie.", 52],
+						["Zajmujesz się obserwacją nieba, przyrody i swoimi sprawami.", 53]
+					],
+		"NEXT": 0
+	},
+	{
+		"TITLE": "OBCY RYCERZ",
+		"NUMBER": 52,
+		"TEXT": "Patrzysz uważnie i widzisz, że z grupy jeźdźców wyłania się podróżny. Prawdopodobnie jest rycerzem, gdyż nosi się dumnie i zachowuje, jak ktoś z wyniosłej kasty rycerskiej.\nPodjeżdża on do dowódcy eskortujacych was orków i rozmawia z nim, wskazujac co chwila na Adranę.",
+		"ACTIONS":	[],
+		"NEXT": 53
+	},
+	{
+		"TITLE": "CZARNY RYCERZ RZUCA WYZWANIE",
+		"NUMBER": 53,
+		"TEXT": "Czarny rycerz podjeżdża do księżniczki Adreny. Odziany w płaszczyznową zbroję, siedzący na ciemnym koniu, okrytym łuskową zbroją. Potężna sylwetka, sugeruje dużą siłę. Uzbrojony jest w ciężką kopię, długi, zdobiony miecz i przytroczoną do siodła małą maczugę. Zatrzymuje się przy księżniczce i woła:\n- Jestem tan Orgar Var Huron, czarny rycerz w słuzbie Seta. Poleciłem sługom moim przyprowadzic mi tę kobietę, abym mógł ją ofierować Setowi. Jednak, jak widzę, została uwolniona. Czy jest tu ten, który odważył się tego dokonać? Niech wystąpi, gdyż mam zamiar odebrać mu wlasność Seta.",
+		"ACTIONS":	[
+						["Występujesz i przyjmujesz wyzwanie.", 60],
+						["Oddalasz się po cichu.", 61]
+					],
+		"NEXT": 0
+	},
+	{
+		"TITLE": "POJEDYNEK",
+		"NUMBER": 60,
+		"TEXT": "Widząc cię czarny rycerz mówi:\n- Przedstaw się i walczmy na śmierć i życie, gdyż znieważyłeś mnie i Seta.\n- Jestem książe Cedryk z Get-warr-garu - mówisz i stajesz do walki.\nTan Var Huron i ty odjeżdżacie na wymaganą kodeksem odległość. Wszyscy orkowie i kupcy rozchodzą się i stają wokół placu boju.\nNa znak księżniczki ruszacie na siebie.",
+		"ACTIONS":	[],
+		"NEXT": 65
+	},
+	{
+		"TITLE": "UCIECZKA",
+		"NUMBER": 61,
+		"TEXT": "Niezauważenie oddalasz się od centrum wydarzeń i po cichu uciekasz.",
+		"ACTIONS":	[],
+		"NEXT": 99
+	},
+	{
+		"TITLE": "WALKA RYCERZEM SETA",
+		"NUMBER": 65,
+		"TEXT": "WALCZYCIE! \n\nPo ciężkim boju zwyciężasz czarnego rycerza. Zabierasz jego rycerski ekwipunek, jako trofeum.\nJesteś bardzo zmęczony i udajesz się na spoczynek.\nNazajutrz wyruszacie w dalszą drogę.",
+		"ACTIONS":	[],
+		"NEXT": 98
+	},
+	{
+		"TITLE": "OSTROGAR",
+		"NUMBER": 98,
+		"TEXT": "Po kilku kolejnych dniach docieracie do Ostrogaru. U bram miasta czekają już na księżniczkę jej dziadkowie i dziękują ci serdecznie, zapraszając do siebie. Udajesz się do domu księcia.\nNastępnego dnia udajesz się na \"Plac Karczemny\" aby poszukać towarzyszy przygód.\n\nTwoja przygoda zakonczyła się szczęśliwie i honorwo!",
+		"ACTIONS":	[],
+		"NEXT": 100
+	},
+	{
+		"TITLE": "HAŃBA CEDRYKA",
+		"NUMBER": 99,
+		"TEXT": "Postapiles niegodnie. Nie jestes  godzien zyc, a szczegolnie byc rycerzem.\nPostapiles niezgodnie z kodeksem rycerskim. Opusciles slabych w potrzebie.\nZapomniales o obowiazkach rycerskich.\n\nTwoj bog Asteriusz Wielki widzi twoja hanbe i zsyla na ciebie kare.\nOpanowuje cię straszna niemoc. Mdlejesz. Wszystko cię boli.\nBudzisz sie pod murami Ostrogaru. Nie wiesz kiedy tam dotarles.\nNie masz pieniedzy, broni, konia. Jestes bez grosza przy duszy.\nPatrzysz na swoje ubrudzone ubranie i wchodzisz do miasta.\nZgryzota nie daje ci spokoju. Postanawiesz znalezc kompanow i zmazac\nz siebie tą hanbe.\n\nDotarles do Ostrogaru, lecz w jakim stanie. Nie mozna powiedziec,\nze byla to udana wedrowka: bez niczego i pohanbiony.\nLecz dotarles, a to sie troche liczy.\n\nWiecej szczescia w dalszej wedrowce.",
+		"ACTIONS":	[],
+		"NEXT": 100
+	},
+	{
+		"TITLE": "KONIEC",
+		"NUMBER": 100,
+		"TEXT": "--- Dziękuję za wspólną zabawę ---",
+		"ACTIONS":	[],
+		"NEXT": 100
+	}
+]
