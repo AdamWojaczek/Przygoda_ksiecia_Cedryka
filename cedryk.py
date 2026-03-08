@@ -1,12 +1,10 @@
 import os
 import json
 import textwrap
-from itertools import count
-
-from termcolor import colored, COLORS
-from pathlib import Path
+from termcolor import colored
 from enum import IntEnum
 from enum import StrEnum
+#from pathlib import Path
 
 ##----------------------------------------------------------------------------------------------------------------------
 
@@ -130,7 +128,8 @@ class Book:
 
 	def _read_file(self):
 		book_data = []
-		path_to_file = Path(__file__).parent.absolute() / "book.json"
+		#path_to_file = Path(__file__).parent.absolute() / "book.json"
+		path_to_file = "book.json"
 		try:
 			with open(path_to_file, 'r', encoding='utf-8') as book_file:
 				book_data = json.load(book_file)
@@ -149,6 +148,9 @@ class Book:
 			else:
 				i += 1
 		return index
+
+	def set_page(self, page):
+		self._current_page = page
 
 	def read_and_play(self):
 		while (self._end == False):
