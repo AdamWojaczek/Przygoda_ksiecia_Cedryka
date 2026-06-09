@@ -4,7 +4,8 @@ import textwrap
 from termcolor import colored
 from enum import IntEnum
 from enum import StrEnum
-#from pathlib import Path
+from functions import get_resource_path
+from sys import exit
 
 ##----------------------------------------------------------------------------------------------------------------------
 
@@ -128,8 +129,7 @@ class Book:
 
 	def _read_file(self):
 		book_data = []
-		#path_to_file = Path(__file__).parent.absolute() / "book.json"
-		path_to_file = "book.json"
+		path_to_file = get_resource_path("book.json")
 		try:
 			with open(path_to_file, 'r', encoding='utf-8') as book_file:
 				book_data = json.load(book_file)
@@ -161,7 +161,7 @@ class Book:
 				self._end = True
 				print(colored("KONIEC - ktoś wyrwał stronę!", Color.YELLOW, "on_" + Color.RED))
 		input("\nNaciśnij ENTER, aby zakończyć...\n")
-		quit()
+		exit(0)
 
 ## BEGIN ##-------------------------------------------------------------------------------------------------------------
 
